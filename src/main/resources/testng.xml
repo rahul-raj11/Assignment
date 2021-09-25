@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Search Engines">
+
+	<listeners>
+		<listener class-name="com.searchengine.extentreport.ExtentTestNGIReporterListener" />
+	</listeners>
+
+	<test thread-count="5" name="Search Engine Tests">
+		<classes>
+			<class name="com.searchengine.testcases.GooglePageTest" />
+			<!-- <class name="com.searchengine.testcases.BingPageTest"/> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
